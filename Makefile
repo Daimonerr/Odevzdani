@@ -1,6 +1,6 @@
 CXX=g++
 CXXFLAGS=-Wall -pedantic -g -std=c++11 -Wno-long-long -O0 -ggdb
-EXECUTABLE=game
+EXECUTABLE=buresda4
 SOURCES=./src/main.cpp ./src/game.cpp ./src/background.cpp ./src/load.cpp ./src/ship.cpp ./src/bullet.cpp ./src/obstacleC.cpp ./src/obstacleB.cpp ./src/obstacleA.cpp ./src/obstacle.cpp ./src/yxpart.cpp ./src/timer.cpp ./src/object.cpp
 
 
@@ -19,4 +19,4 @@ clean:
 	rm -rf ./doc
 
 run:
-	./game
+	./buresda4

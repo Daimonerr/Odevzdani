@@ -173,7 +173,7 @@ void CGame::gameControll()
 					c_mag--;
 			}
 			break;
-		case 'l':
+		case 'g':
 			background.pauseGame();
 			break;
 

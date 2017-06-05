@@ -42,11 +42,11 @@ void CBack::startMenu(vector<LOAD> & fileVect, int & cntFileObjs, int & end)
 	mvprintw(18,10,"This game is a action-shooter.");
 	mvprintw(19,10,"Your main objective is to destroy as many"); 
 	mvprintw(20,10,"obstacles as u can and not being hit by them.");					
-	mvprintw(21,10,"Game has 10 levels in total.");
-	mvprintw(22,10,"Higher levels are going to be harder to survive.");
-	mvprintw(23,10,"Each destroyed obstacle gives you +20 score.");
-	mvprintw(24,10,"Every 400 points of score will give you");
-	mvprintw(25,10,"random bonus (more guns, shield, extra health).");
+	mvprintw(21,10,"During the game its gonna be harder and harder.");
+	mvprintw(22,10,"Each destroyed obstacle gives you +20 score.");
+	mvprintw(23,10,"Every 500 points of score will give you");
+	mvprintw(24,10,"random bonus (more guns, indestructibility,");
+	mvprintw(25,10,"unlimited ammo).");
 	attron(A_UNDERLINE);
 	mvprintw(27,5,"CONTROLLS:");
 	attroff(A_UNDERLINE);
@@ -149,7 +149,7 @@ bool CBack::getFile(vector<LOAD> & fileVect,
 	char type;
 
 	FILE *mapFile;
-	getnstr(c_mapName,19);
+	getnstr(c_mapName,35);
 	cntFileObjs = 0;
 	mapFile = fopen(c_mapName,"r");
 	

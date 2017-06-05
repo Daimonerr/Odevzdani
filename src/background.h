@@ -96,7 +96,7 @@ class CBack {
 		char c_nickname[20];
 
 		//! name of file that contains formated data for map
-		char c_mapName[20];
+		char c_mapName[36];
 };
 
 #endif
